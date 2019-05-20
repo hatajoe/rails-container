@@ -1,3 +1,7 @@
 FROM alpine:latest
 
-CMD echo 'hello, world!'
+RUN apk update && \
+    apk upgrade && \
+    apk add git
+
+CMD git --version
