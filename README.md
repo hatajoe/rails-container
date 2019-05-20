@@ -1,9 +1,9 @@
-# rails-bootstrap
+# rails-container
 
-rails-bootstrap is a portable Ruby on Rails environment for developers.
+rails-container is a portable Ruby on Rails environment for developers.
 This repository represents a container building process as the step by step commits.
 
-# setup
+# make commands
 
 build Docker image:
 
@@ -11,8 +11,25 @@ build Docker image:
 % make build
 ```
 
-run Docker image:
+bundle install:
+
+```
+% make install
+```
+
+rails new:
+
+```
+% make new
+```
+
+check rails version:
 
 ```
 % make run
 ```
+
+# change Ruby version
+
+- modify .ruby-version
+- make build
